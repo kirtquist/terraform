@@ -32,7 +32,7 @@ jobs:
         pwd
         
         d=$(date)
-        echo "::set-env name=MULE_ENV::development
+        echo "::set-env name=MULE_ENV::development"
         echo Today is $d and we are in $MULE_ENV
     
     # Runs a set of commands using the runners shell
