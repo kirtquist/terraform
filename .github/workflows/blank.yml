@@ -33,7 +33,8 @@ jobs:
         
         d=$(date)
         echo "::set-env name=MULE_ENV::development"
-        echo Today is $d and we are in $MULE_ENV
+        env|grep MU
+        echo Today is $d and we are in $GITHUB_WORKSPACE
     
     # Runs a set of commands using the runners shell
     - name: Run a multi-line script
